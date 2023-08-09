@@ -91,18 +91,13 @@ height: 20px;
           color: #fff;        
 }
 
-#navigation > .btn {
-          display:flex;
-          padding: 0 10px;
+#navigation > .button > span{
+          display:inline-block;
+          padding: 10px;
           border-radius: 8px;
           border: none;
-          
-          
-          
-}
-
-#navigation > .btn > a {
-         padding: 5px;
+          background-color: #fff;
+          margin: 0 5px;
          text-decoration: none;
          color: dodgerblue
 }
