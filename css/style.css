@@ -18,6 +18,12 @@
           margin-left: 50px;
 }
 
+#navigation > .nav__logo-area:hover {
+          color: black;
+          font-weight: 600;
+          transition: 3s;     
+}
+
 #navigation > .nav__logo--style {
           color: #ffff;
           font-size: 18px;
@@ -34,13 +40,30 @@ margin-right: 50px;
 #navigation > .nav__list-area > .nav__list-item {
           list-style: none;
           margin: 15px 0;
-          padding: 0 5px;
+          padding: 0 15px;
           color: #ffff;
           font-family: 'Helvetica', sans-serif;
           font-size: 16px;
           font-weight: 300;
-          font-style: normal;    
+          font-style: normal; 
+          border-right: 1px solid #ffff;
+          padding: 16px 20px;  
+          
+
 }
 
+#navigation > .nav__list-area > .nav__list-item:hover {
+background-color: #d3d3d3;
+color: black;
+font-weight: 600;
+transition: 3s;
 
+}
+
+#navigation > .nav__list-area > .nav__list-item:first-child > .nav__list-style {
+          border-left: 1px solid #ffff;
+          padding: 16px 10px;
+          margin-left: -20px;
+          
+}
 
