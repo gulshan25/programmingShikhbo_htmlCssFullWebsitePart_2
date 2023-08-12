@@ -1,118 +1,123 @@
 * {
-          margin: 0;
+          margin:0;
           padding: 0;
 }
 
-/*===========
-# navigation
-===========*/
+/*=========
+# header
+=========*/
 
-#navigation {
-          background-image: linear-gradient(dodgerblue, rgb(3, 72, 141));
+.navigation {
           display: flex;
           justify-content: space-between;
-          align-items: center;
+          box-shadow: 5px 0px 0.5px black;
+          background: linear-gradient(dodgerblue, rgb(21, 77, 133));
+          align-items: center; /* vertical alignment */
 }
 
-.logo__area-text > h2 {
-          text-transform: uppercase;
+.navigation__logo-area > h2 {
           margin-left: 50px;
-          font-family: 'Arial',sans-serif;
-          font-size: 24px;
-          font-weight: 700;
-}
-
-.logo__area-text:hover > h2 {
-          color: rgb(92, 92, 92);
-          transition: 0.5s;
-}
-
-.logo__change--color {
           color: white;
-          font-size: 30px;
 }
 
-#navigation > ul {
+.navigation__items-area > ul {
           display: flex;
           margin-right: 50px;
 }
 
-#navigation > ul > li {
+.navigation__items-area > ul > li {
           list-style: none;
           margin: 0 5px;
-          margin-left:-5px;
+          margin-left: -5px;
           padding: 15px 0;
+          
 }
 
-#navigation > ul > li > a {
-          text-decoration: none;
-          color: black;
-          text-transform: uppercase;
-          font-family: 'Arial',sans-serif;
-          font-size: 18px;
-          font-weight: 300;
-          border-right: 1px solid rgb(92, 92, 92);;
+.navigation__items-area > ul > li > a {
+          border-right: 1px solid white;
           padding: 16px 20px;
 }
 
-#navigation > ul > li:first-child > a {
-          border-left: 1px solid rgb(92, 92, 92);;
+.navigation__items-area > ul > li:first-child > a {
+          border-left: 1px solid white;
+          
 }
 
-#navigation > ul > li:hover > a {
-          background-color:darkgray;
-          color: white;
+.navigation__items-area > ul > li:hover > a {
+          background-color: lightblue;
           transition: 0.5s;
 }
 
-/*============= 
-# dropdownMenu 
-=============*/
+.navigation__items-area > ul > li > a {
+          text-decoration: none;
+          color: white;
+}
+
+/*=========
+# dropdown
+=========*/
 
 .dropdownMenu {
-          /* display: none; */
+          position: absolute;
+          background-color: dodgerblue;
+          width: 160px;
+          margin-top: 15px;
           opacity: 0;
           visibility: hidden;
-
-          text-align: center;
-          background-color: #dfdfdf;
-          position: absolute;
-          margin-top: 15px;
-          width: 190px;
-          transition:  0.5s;
           transform: scaleY(0);
-          transform-origin:top center;
-          box-shadow: 10px 10px 8px black;
+          transition: 0.5s;
+          box-shadow: 2px 2px 5px black;
 }
 
 .dropdownMenu > li {
           list-style: none;
-          border-bottom: 1px solid rgb(92, 92, 92);; 
-          padding: 10px 0;
+          text-align: center;
+          padding: 15px 20px;
+          border-bottom: 1px solid white;
+          
 }
 
 .dropdownMenu > li:first-child {
-          border-top: 1px solid rgb(92, 92, 92);;
+          border-top: 1px solid white;
 }
 
 .dropdownMenu > li:hover {
-          background-color:darkgray;
+          background-color: lightblue;
           transition: 0.5s;
+          
 }
 
 .dropdownMenu > li > a {
           text-decoration: none;
-          color:black;         
+          color: white;
+          
+          
 }
 
-.dropdownMenu > li > a:hover {
-          color:white;
-          transition: 0.5s;
-}
-
-#navigation > ul > li:hover > .dropdownMenu {
-          /* display: block; */
+.navigation__items-area > ul > li:hover > .dropdownMenu {
           opacity: 1;
           visibility: visible;
           transform: scaleY(1);
+          
+}
+
+/*=========
+# hero area
+=========*/
+
+.main__header {
+          text-align: center;
+          background-image: url("../img/download.jpeg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          height: 100vh;
+}
+
+.hero__container {
+          padding-top: 100px;
+}
+
+.hero__container > h1 {
+          color: white;
 }
